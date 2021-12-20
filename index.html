@@ -16,7 +16,7 @@
 <!-- <script src="index.js"></script> -->
 
 <body>
-    <p class="titlePrincipal">carga masiva de objetos</p>
+    <p class="titlePrincipal">Carga Masiva: Objetos Modificados</p>
     <form> 
         <div class="form">
             <div class="formGroup">
@@ -24,10 +24,9 @@
                 <input name="file" id="entry_value" ref="fileInput" type="file" onchange="getFileName()">
                 <div>
                    <img src="iconLoad.png" alt="" width="100rem">
-                    <p>Arrastrar y dejar tu archivo aqui o</p> 
-                    <button class="btn bg-color-dblue btn-primary ">Busca en el directorio</button>
+                    <p>Arrastrar y dejar tu archivo Excel aqui o</p> 
+                    <button class="btn bg-color-dblue btn-primary ">Buscar en el Directorio</button>
                 </div>
-                
             </div>
             <span id="fileName" class="text-primary"></span>
         </div>
@@ -38,7 +37,7 @@
 
         <span class="loader"></span>
 
-        <input class="botonExcel" type="button" value="boton que activa el recorrido del excel" onclick="EjecutaAccion('Load')">
+        <input class="botonExcel" type="button" value="Cargar Archivo" onclick="EjecutaAccion('Load')">
        
     </div>
 
@@ -54,7 +53,10 @@
       <div class="error-msg">
         <i class="fa fa-times-circle"></i>
         Error al cargar archivo.
-    </div>
+     </div>
+     <div class="enlaceDescargaArchivo">
+         <p >Pantilla de Ejemplo de Carga Masiva <a href="#" onclick="descarga()">Descargar</a></p>
+     </div>
 
    
     

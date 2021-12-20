@@ -22,6 +22,15 @@ function getFileName() {
     var x = document.getElementById('entry_value')
     document.getElementById('fileName').innerHTML = x.value.split('\\').pop()
 }
+
+// funcion para descargar el archivo
+function descarga(){
+    // logica para el archivo procesado a descargar
+    console.log('se descarga el archivo...');
+        
+    
+    
+}
 //animacion del resultado de la operacion exito o fracaso 
 function showSuccess(){
     document.getElementsByClassName("success-msg")[0].style.visibility = 'visible';
@@ -33,7 +42,7 @@ function showError(){
 //uso de libreria jquery
 $(function(){
     $(".formGroup").hover(function(){
-         $(".bg-color-dblue").css("background-color", "blue");
+         $(".bg-color-dblue").css("background-color", "rgb(6, 6, 100)");
         },function(){
             $(".bg-color-dblue").css("background-color", "");
         });

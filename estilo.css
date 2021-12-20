@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&display=swap');
   .divLoader{
  
     margin-top: 6rem;
@@ -54,16 +54,22 @@
     }
    
     .form span{
+      
       display: block;
-
-      color: blue;
+      color: rgb(6, 6, 100);
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      overflow-wrap: break-word;
+    	white-space:normal;
+      margin-left: auto;
+      margin-right: auto;
       top:150px;
       text-align: center;
     }
   
 
     .formGroup{
-      
       border-radius: 10px;
       background-color: #FF3D00;
       width: 100%;
@@ -98,6 +104,10 @@
     .formGroup button{
     
         position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        width: auto;
+        padding: 4px;
         border-radius: 10px;
         padding: 10px 20px;
         background: red;
@@ -106,12 +116,15 @@
         color: white;
         font-size: 16px;
     }
+    .formGroup p{
+      font-size: 16px;
+    }
     .botonExcel:hover{
     
       position: relative;
       border-radius: 10px;
       padding: 10px 20px;
-      background: blue;
+      background:rgb(6, 6, 100);
       outline: none;
       border: none;
       color:white;
@@ -120,6 +133,8 @@
   }
 
     .botonExcel{
+      font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
       position: relative;
         border-radius: 10px;
         padding: 10px 20px;
@@ -134,8 +149,11 @@
         content: 'File Name:';
     }
     #fileName {
-      font-size: 22px;
+        hyphens: auto;
+        font-size: 20px;
+        text-align: center;
         position: relative;
+        /* white-space:nowrap; */
         top: 17rem;
     }
     
@@ -147,6 +165,14 @@
             text-align: center;
             
           }
+          #fileName {
+            hyphens: auto;
+            font-size: 16px;
+            text-align: center;
+            position: relative;
+            /* white-space:nowrap; */
+            top: 17rem;
+        }
     } 
 
   /* //estilos para el check   */
@@ -193,13 +219,15 @@
 
 .titlePrincipal{
   text-align: center;
-color: rgb(6, 6, 100);
+  color: rgb(6, 6, 100);
   margin-left: auto;
   margin-right: auto;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   font-size: 20px;
-  font-weight:bolder;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
 }
 p{
   font-size: 20px;
@@ -207,8 +235,13 @@ p{
   color: white;
 }
 body{
+  font-family: 'Open Sans', sans-serif;
   background: #DCE35B;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+.enlaceDescargaArchivo{
+ 
+  text-align: center;
 }
